@@ -1,0 +1,22 @@
+.cardStyle {
+    width: min-content;
+    display: flex;
+    flex-flow: column wrap;
+    border: 2px solid gray;
+    padding: 15px;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 8px 0px gray; */
+}
+.cardStyle:hover{
+    box-shadow: 0px 0px 10px 3px gray;
+    transition: all 0.2s linear;
+}
+.cardStyle a img{
+    height:200px;
+    width:400px;
+    border-radius: 10px;
+}
+.cardStyle cardTitle h3 {
+    padding: 15px 0px 15px 0px;
+    font-size: 35px;
+}

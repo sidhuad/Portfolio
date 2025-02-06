@@ -41,7 +41,35 @@
         transition: all 0.2s linear;
     }
 } */
-
-.nav-item{
-    font-weight: bold;
+.container {
+  opacity: 0;
+  animation: fade 0.5s linear 1s forwards;
 }
+.nav-item {
+  font-weight: bold;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ @media (min-width:300px) and (max-width:575px){
+   .container {
+     opacity: 0;
+     animation: fade 0.5s linear 1s forwards;
+   }
+   .nav-item {
+     font-weight: bold;
+   }
+   @keyframes fade {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }
+   }
+ }

@@ -1,6 +1,16 @@
+import image from '../images/avatar.png';
+
 export default function AboutMe(){
+    const imgStyle={
+        height:"100px",
+        width:"100px",
+        border:"2px solid green",
+        borderRadius:"50%",
+        backgroundColor:"gray",
+    }
     return (
         <article className="container mt-5">
+            <img src={image} style={imgStyle} alt="avatar" />
             <h1>About Me</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rem omnis quod iure ipsam quos iusto numquam velit, laborum modi architecto nihil, alias doloribus quas ullam? Labore cumque dicta beatae.
