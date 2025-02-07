@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Navbar from './components/Navigation';
+import Footer from './components/Footer';
 import './styles/App.css';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 
 function App() { 
+  
   return (
     <>
     <Header name="Adarshpreet" />
@@ -12,6 +14,7 @@ function App() {
     <main className='main'>
       <Outlet/>  
     </main>  
+    <Footer />
     </>
 
   )
