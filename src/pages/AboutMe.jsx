@@ -9,7 +9,7 @@ export default function AboutMe(){
         backgroundColor:"gray",
     }
     return (
-        <article className="container mt-5">
+        <article className="container mt-5" style={{lineHeight:"36px"}}>
             <img src={image} style={imgStyle} alt="avatar" />
             <h1>About Me</h1>
             <p>

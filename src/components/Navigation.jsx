@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import "../styles/navigation.css";
 
 export default function Navigation() {
-  // const currentPage = useLocation().pathname;
+  const currentPage = useLocation().pathname;
 
   return (
     // <nav className="container-fluid justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-end navbar">

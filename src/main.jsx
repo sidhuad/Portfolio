@@ -1,8 +1,9 @@
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider,Navigate } from 'react-router-dom';
 import App from './App.jsx';
 import AboutMe from './pages/AboutMe.jsx';
 import Portfolio from './pages/Portfolio.jsx';
+import Contact from './pages/Contact.jsx';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
         children:[
             {
                 index:true,
-                element:<AboutMe/>,
+                element:<Navigate to ="/AboutMe" replace/>,
             },
             {
                 path:'/AboutMe',
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
             {
                 path:'/Portfolio',
                 element:<Portfolio/>,
+            },
+            {
+                path:'/Contact',
+                element:<Contact/>
             }
         ],
     },
